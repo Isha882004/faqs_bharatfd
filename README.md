@@ -81,13 +81,11 @@ cd faqs_bharatfd
    Create a `.env` file in the root directory of the project.  
    Add necessary configurations such as database connection, Redis URL, and API keys. Example:
    ```env
-   DB_URI=mongodb://localhost:27017/faqdb
-REDIS_URL=redis://localhost:6379
-GOOGLE_TRANSLATE_API_KEY=your-api-key-here
-
-   ```
-
-4. **Set up Redis**  
+   MONGO_URI=mongodb://127.0.0.1:27017/faqs
+   REDIS_URL=redis://localhost:6379
+   GOOGLE_TRANSLATE_API_KEY=your-api-key-here
+    ```
+4. **set up redis**  
    Make sure Redis is installed and running. The app will connect to Redis for caching.  
    You can start Redis by running:
    ```sh
@@ -129,9 +127,12 @@ GET /api/faqs/?lang=bn   # Fetch FAQs in Bengali
 POST /api/faqs/
 Content-Type: application/json
 {
-    "question": "What is Node.js?",
-    "answer": "Node.js is a JavaScript runtime.",
-    "language": "en"
+question "what is django?"
+answer "<p>django is a high-level python web framework..<p>"
+question_hi"Django क्या है?"
+createdAt 2025-02-01T15:43:20.537+00:00
+updatedAt 2025-02-01T15:43:20.537+00:00
+__v: 0
 }
 ```
 
@@ -140,7 +141,7 @@ Content-Type: application/json
 PUT /api/faqs/:id
 Content-Type: application/json
 {
-    "answer": "Updated answer for Node.js."
+    "answer": "Updated answer for Django."
 }
 ```
 
