@@ -49,10 +49,10 @@ faq-backend/
 ├── package.json            # Dependencies and scripts
 └── README.md               # Documentation
 └── server.js               # Entry point for the server
-
 ---
+```
 
-## 🛠️ Installation & Setup
+### **Tech Stack**
 
 Follow these steps to set up the project on your local machine.
 
@@ -68,8 +68,7 @@ Ensure you have the following installed:
    ```sh
    git clone https://github.com/your-repo/faqs_bharatfd.git
 cd faqs_bharatfd
-
-   ```
+ 
 
 2. **Install dependencies**  
    Install the required dependencies:
