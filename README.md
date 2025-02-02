@@ -67,7 +67,7 @@ Ensure you have the following installed:
    First, clone the repository to your local machine:
    ```sh
    git clone https://github.com/your-repo/faqs_bharatfd.git
-cd faqs_bharatfd
+    cd faqs_bharatfd
  
 
 2. **Install dependencies**  
